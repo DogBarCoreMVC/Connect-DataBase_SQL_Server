@@ -13,5 +13,7 @@ namespace SQL_Server_EFCore.Models
 
         [Display(Name = "ประเภทอาหาร")]
         public string GroupNameMenu { get; set; }
+        
+        //Creat Table Database
     }
 }
