@@ -10,7 +10,7 @@ namespace SQL_Server_EFCore.Models
     {
         public Context(DbContextOptions<Context>options):base(options)
         {
-            //สร้าง Constructor และใช้ความสามารถของ EFCore (DbContextOptions) ในการสร้าง Database
+            //สร้าง Constructor ทำการ Depandency Injection เข้าไปที่ ConfigureServices ใน class Startup.cs
         }
         DbSet<GroupMenu> groupMenus_tbl { get; set; }//GroupMenu.cs เป็นคลาสที่เราสร้างไว้แต่จะกลายไปเป็น table ใน Database และ groupMenus_tbl คือชื่อ ของ Table
     }
