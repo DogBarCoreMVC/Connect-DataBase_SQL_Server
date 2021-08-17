@@ -28,6 +28,10 @@ namespace SQL_Server_EFCore
             services.AddControllersWithViews();
 
             services.AddDbContext<Context>(options => options.UseSqlServer(Configuration.GetConnectionString("ConnectionString")));
+            //เพิ่ม services AddDbContext 
+            //ตามด้วย Context.cs เป็นคลาสที่ใช้ความสามารถของ EFCore ในการสร้าง table ใน Database ที่เขียนไว้เสร็จเรียบร้อยแล้ว
+            //เพิ่ม Database ที่เราต้องการใช้ในการเชื่อมต่อ options.UseSqlServer
+            //ตามด้วยการกำหนดค่า ในการเชื่อมต่อ Database ของเรา ("ConnectionString" เขียนไว้เรียบร้อยแล้ว อยู่ในไฟล์ appsettings.json)
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
