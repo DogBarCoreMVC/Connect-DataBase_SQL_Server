@@ -1,0 +1,6 @@
+﻿Migration
+
+1.Add-Migration InitialCreate สร้าง floder Migration และสร้างไฟล์ที่เกี่ยวกับ Table ที่เราสร้างไว้
+2.Update-Database ส่ง Databas และ Table ขึ้นไปที่ ssms
+3.Add-Migration AddBlog(ใส่ชื่อ Table ที่ต้องการแก้ไข ถ้ามี)
+4.Update-Database อีกครั้ง
